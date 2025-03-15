@@ -1,7 +1,7 @@
-let amigos = []; // Array para armazenar os nomes dos amigos
-let amigoSecreto = document.getElementById('listaAmigos'); // Elemento da lista no HTML
-let adicionarNome = document.getElementById('amigo'); // Input para adicionar nomes
-let resultado = document.getElementById('resultado'); // Elemento onde será exibido o resultado do sorteio
+let amigos = []; 
+let amigoSecreto = document.getElementById('listaAmigos'); 
+let adicionarNome = document.getElementById('amigo'); 
+let resultado = document.getElementById('resultado');
 
 // Função para adicionar um amigo à lista
 function adicionarAmigo() {
@@ -18,8 +18,8 @@ function adicionarAmigo() {
     }
 
     amigos.push(nome); // Adiciona o nome ao array
-    let novoItem = document.createElement('li'); // Cria um novo elemento <li>
-    novoItem.textContent = nome; // Define o texto do elemento
+    let novoItem = document.createElement('li'); 
+    novoItem.textContent = nome; 
     amigoSecreto.appendChild(novoItem); // Adiciona o nome à lista na interface
     adicionarNome.value = ''; // Limpa o campo de entrada
 }
