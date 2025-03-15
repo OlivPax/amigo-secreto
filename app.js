@@ -1,11 +1,12 @@
 let amigos = []; 
-let amigoSecreto = document.getElementById('listaAmigos'); 
-let adicionarNome = document.getElementById('amigo'); 
-let resultado = document.getElementById('resultado');
+let amigoSecreto = document.getElementById('listaAmigos');
+let adicionarNome = document.getElementById('amigo');
+let resultado = document.getElementById('resultado'); 
+let botaoReiniciar = document.getElementById('reiniciar'); 
 
 // Função para adicionar um amigo à lista
 function adicionarAmigo() {
-    let nome = adicionarNome.value.trim(); // Remove espaços extras do input
+    let nome = adicionarNome.value.trim(); // Remove espaços extras 
 
     if (nome === '') { // Verifica se o campo está vazio
         alert('Preencha o campo nome.');
@@ -17,7 +18,7 @@ function adicionarAmigo() {
         return;
     }
 
-    amigos.push(nome); // Adiciona o nome ao array
+    amigos.push(nome); 
     let novoItem = document.createElement('li'); 
     novoItem.textContent = nome; 
     amigoSecreto.appendChild(novoItem); // Adiciona o nome à lista na interface
@@ -37,3 +38,12 @@ function sortearAmigo() {
     resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}</strong>`; // Exibe o nome sorteado
 }
 
+// Função para reiniciar o sorteio
+function reiniciarSorteio() {
+    amigos = []; // Limpa o array de amigos
+    amigoSecreto.innerHTML = ''; // Remove os itens da lista na interface
+    resultado.innerHTML = ''; // Limpa o resultado do sorteio
+}
+
+// Adiciona evento ao botão de reinício
+document.getElementById('reiniciar').addEventListener('click', reiniciarSorteio);
