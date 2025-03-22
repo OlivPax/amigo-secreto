@@ -20,7 +20,16 @@ Acesse a versão online do projeto através do link:
 [Amigo Secreto - Deploy Vercel](https://amigo-secreto-one-mocha.vercel.app/)
 
 ## 🎨 Exemplo Visual
-![challenge-amigo-secreto](https://github.com/user-attachments/assets/3ffa4d7d-a876-4756-b268-ae6f7cae3028)
+![challenge-amigo-secreto](https://github.com/user-attachments/assets/3ffa4d7d-a876-4756-b268-ae6f7cae3028)  
+
+
+
+
+https://github.com/user-attachments/assets/8fbfb8cc-6d16-4a37-b7d9-9b4e1892755e
+
+
+
+
 
 
 ---
